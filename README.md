@@ -21,15 +21,26 @@ Or install it yourself as:
     $ gem install pinata
 
 ## Usage
+```
+require "pinata"
 
-Pinning
-```
-Pinata::Pin.pin_file('filename')
-```
+Pinata.api_key = "OURKEY"
+Pinata.secret_api_key = "YOURSECRETKEY"
 
-Unpinning
-```
-Pinata::Pin.remove_pin('hash')
+#Pinning new file
+Pinata::Pin.pin_file('filename.txt')
+
+# Example response
+=> {"IpfsHash"=>"bLaHBlAhbLaHBlAhbLaHBlAhbLaHBlAh", "PinSize"=>"1451", "Timestamp"=>"2019-02-26T06:40:45.107Z"}
+
+
+#Unpinning
+Pinata::Pin.remove_pin('bLaHBlAhbLaHBlAhbLaHBlAhbLaHBlAh')
+
+# Example reponse
+Success
+=> nil
+
 ```
 
 ## Development
@@ -40,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/pinata.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dalton-cole/pinata.
 
 ## License
 

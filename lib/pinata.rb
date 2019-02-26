@@ -3,6 +3,7 @@ require "pinata/pin"
 require "net/https"
 require "uri"
 require "json"
+require "mime-types"
 
 module Pinata
   class Error < StandardError; end
