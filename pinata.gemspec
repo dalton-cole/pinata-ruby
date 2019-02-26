@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dalton"]
   spec.email         = ["dalton@alphaparse.com"]
 
-  spec.summary       = %q{Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "https://dalton-cole.github.io/pinata"
+  spec.summary       = %q{Ruby gem for interacting with the Pinata IPFS client}
+  spec.homepage      = "https://github.com/dalton-cole/pinata-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

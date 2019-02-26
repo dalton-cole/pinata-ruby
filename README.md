@@ -24,7 +24,7 @@ Or install it yourself as:
 ```
 require "pinata"
 
-Pinata.api_key = "OURKEY"
+Pinata.api_key = "YOURKEY"
 Pinata.secret_api_key = "YOURSECRETKEY"
 
 #Pinning new file
